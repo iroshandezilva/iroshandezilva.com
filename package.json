@@ -1,33 +1,28 @@
 {
-  "name": "tailwind-setup",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "watch": {
-    "dev": {
-      "patterns": [
-        "src"
-      ],
-      "extensions": "css",
-      "delay": 1500,
-      "runOnChangeOnly": false
-    }
-  },
+  "name": "iroshan",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "postcss src/app.css -o public/assets/css/style.css",
-    "prod": "cross-env NODE_ENV=production postcss src/app.css -o public/assets/css/style.css",
-    "watch": "npm-watch"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.2",
-    "tailwindcss": "^2.2.2"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "npm-watch": "^0.10.0",
-    "postcss-cli": "^8.3.1"
+    "next": "15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "15.2.2",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
