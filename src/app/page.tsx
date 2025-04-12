@@ -1,5 +1,13 @@
-export default function Home() {
+import Hero from "@/components/home/Hero";
+import CaseStudyHighlight from "@/components/home/CaseStudyHighlight";
+import ClientLists from "@/components/home/ClientsLists";
+
+export default function HomePage() {
   return (
-    <main className="text-2xl font-bold p-6">Welcome to My Portfolio ✨</main>
+    <>
+      <Hero />
+      <CaseStudyHighlight />
+      <ClientLists />
+    </>
   );
 }
