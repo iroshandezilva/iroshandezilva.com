@@ -1,5 +1,6 @@
 // app/blog/[slug]/page.tsx
 import { getPostSlugs, getSerializedPost } from "@/lib/mdx";
+
 import type { Metadata } from "next";
 import MdxRenderer from "@/components/MdxRenderer";
 
@@ -37,7 +38,9 @@ export default async function BlogPostPage({
 			{post.tags?.length > 0 && (
 				<p className="text-xs">{post.tags.join(", ")}</p>
 			)}
+      
 			<MdxRenderer source={post.mdxSource} />
+
 		</article>
 	);
 }
