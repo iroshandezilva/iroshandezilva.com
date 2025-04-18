@@ -1,6 +1,8 @@
+// app/blog/[slug]/page.tsx
 import { getPostSlugs, getSerializedPost } from "@/lib/mdx";
-import { MDXRemote } from "next-mdx-remote";
+
 import type { Metadata } from "next";
+import MdxRenderer from "@/components/MdxRenderer";
 
 // ✅ Statically generate all blog slugs at build time
 export async function generateStaticParams() {
@@ -9,7 +11,7 @@ export async function generateStaticParams() {
 	}));
 }
 
-// ✅ Dynamically generate metadata with destructuring inside function
+// ✅ Dynamically generate metadata
 export async function generateMetadata({
 	params,
 }: {
@@ -21,7 +23,7 @@ export async function generateMetadata({
 	};
 }
 
-// ✅ Page component with no destructuring before resolution
+// ✅ Server Component
 export default async function BlogPostPage({
 	params,
 }: Readonly<{
@@ -36,7 +38,9 @@ export default async function BlogPostPage({
 			{post.tags?.length > 0 && (
 				<p className="text-xs">{post.tags.join(", ")}</p>
 			)}
-			<MDXRemote {...post.mdxSource} components={{}} />
+      
+			<MdxRenderer source={post.mdxSource} />
+
 		</article>
 	);
 }
