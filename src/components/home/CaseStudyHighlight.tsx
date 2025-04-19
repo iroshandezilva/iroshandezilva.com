@@ -1,9 +1,13 @@
+"use client";
+
+import { CustomLink } from "@/components/shared/3d-button";
+import { ArrowRight } from "@phosphor-icons/react";
+
 import Image from "next/image";
-import CustomLink from "../shared/Link";
 
 export default function CaseStudyHighlight() {
   return (
-    <section className="mt-8">
+    <section className="mt-8 px-6 lg:px-0">
       <div>
         <div>
           <div className="max-w-5xl overflow-hidden rounded-lg border border-stone-200 shadow-image  mx-auto">
@@ -77,7 +81,16 @@ export default function CaseStudyHighlight() {
               </div>
 
               <div className="col-span-3">
-                <CustomLink href="/contact">read the case study</CustomLink>
+                <CustomLink
+                  variant="solid"
+                  size="lg"
+                  leadingIcon={ArrowRight}
+                  iconSize={20}
+                  iconWeight="bold"
+                  href="/contact"
+                >
+                  Read the case study
+                </CustomLink>
               </div>
             </div>
           </div>
