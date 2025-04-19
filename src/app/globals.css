@@ -11,4 +11,9 @@
 
 @theme {
   --font-heading: "Switzer", sans-serif;
+  --shadow-image: 0px 3.2px 6.4px 0px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  background: #F9F9F9;
 }

@@ -1,6 +1,6 @@
 export default function ClientLists() {
   return (
-    <section className="mx-auto max-w-2xl">
+    <section className="mx-auto max-w3xl">
       <div className="flex-col items-start justify-start gap-4">
         <div className="flex flex-col items-start justify-start gap-1 self-stretch">
           <div className="justify-start text-base leading-relaxed font-normal text-slate-600">
