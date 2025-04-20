@@ -1,8 +1,18 @@
+"use client";
+
 import React from "react";
+import {
+  RocketLaunch,
+  PaintBrushHousehold,
+  Shapes,
+  UserPlus,
+  Checks,
+} from "@phosphor-icons/react";
 
 const MyServices = () => {
   return (
     <section className="mx-auto max-w-3xl">
+      
       <div className="inline-flex flex-col items-start justify-start gap-10">
         <div className="flex flex-col items-start justify-start gap-1.5 self-stretch">
           <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-500">
@@ -17,8 +27,7 @@ const MyServices = () => {
           <div className="inline-flex items-start justify-start gap-2 self-stretch">
             <div className="flex w-8 items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-[5px] py-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.10)] outline outline-1 outline-offset-[-1px] outline-neutral-300">
               <div data-property-1="3-d-view" className="relative h-5 w-5">
-                <div className="absolute top-[4.58px] left-[5px] h-2.5 w-2.5 bg-gray-900" />
-                <div className="absolute top-[1.25px] left-[1.25px] h-4 w-4 bg-gray-900" />
+                <RocketLaunch size={20} weight="fill" />
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
@@ -35,8 +44,7 @@ const MyServices = () => {
           <div className="inline-flex items-start justify-start gap-2 self-stretch">
             <div className="flex w-8 items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-[5px] py-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.10)] outline-1 outline-offset-[-1px] outline-neutral-300">
               <div data-property-1="web-design-02" className="relative h-5 w-5">
-                <div className="absolute top-[10.21px] left-[6.04px] h-2 w-3 bg-slate-900" />
-                <div className="absolute top-[1.04px] left-[1.04px] h-3.5 w-4 bg-slate-900" />
+                <PaintBrushHousehold size={20} weight="fill" />
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
@@ -54,7 +62,7 @@ const MyServices = () => {
           <div className="inline-flex items-start justify-start gap-2 self-stretch">
             <div className="flex w-8 items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-[5px] py-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.10)] outline-1 outline-offset-[-1px] outline-neutral-300">
               <div data-property-1="add-team-02" className="relative h-5 w-5">
-                <div className="absolute top-[2.71px] left-[2.71px] h-3.5 w-4 bg-slate-900" />
+                <UserPlus size={20} weight="fill" />
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
@@ -70,7 +78,7 @@ const MyServices = () => {
           <div className="inline-flex items-start justify-start gap-2 self-stretch">
             <div className="flex w-8 items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-[5px] py-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.10)] outline-1 outline-offset-[-1px] outline-neutral-300">
               <div data-property-1="add-to-list" className="relative h-5 w-5">
-                <div className="absolute top-[1.04px] left-[2.29px] h-4 w-4 bg-slate-900" />
+                <Checks size={20} weight="fill" />
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
@@ -85,15 +93,7 @@ const MyServices = () => {
           </div>
           <div className="inline-flex items-start justify-start gap-2 self-stretch">
             <div className="flex w-8 items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-[5px] py-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.10)] outline-1 outline-offset-[-1px] outline-neutral-300">
-              <div
-                data-property-1="shape-collection"
-                className="relative h-5 w-5"
-              >
-                <div className="absolute top-[1.88px] left-[1.88px] h-2 w-2 bg-slate-900" />
-                <div className="absolute top-[1.88px] left-[11.04px] h-2 w-2 bg-slate-900" />
-                <div className="absolute top-[11.04px] left-[1.88px] h-2 w-2 bg-slate-900" />
-                <div className="absolute top-[11.46px] left-[11.46px] h-1.5 w-1.5 bg-slate-900" />
-              </div>
+              <Shapes size={20} weight="fill" />
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
               <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-medium text-black">

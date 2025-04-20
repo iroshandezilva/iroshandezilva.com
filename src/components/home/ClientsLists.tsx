@@ -44,7 +44,7 @@ const clients = [
 
 // Client logo component
 const ClientLogo = ({
-  name,
+  // name,
   href,
   imageSrc,
   alt,
@@ -56,7 +56,7 @@ const ClientLogo = ({
 }) => {
   return (
     <Link
-      className="h-12 w-32 flex items-center justify-center"
+      className="h-12 flex items-center justify-center"
       href={href}
       target="_blank"
     >
@@ -66,7 +66,7 @@ const ClientLogo = ({
         width={0}
         height={0}
         sizes="100vw"
-        className="h-12 w-32 rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
+        className="h-full w-auto rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
         priority
       />
     </Link>
@@ -75,7 +75,7 @@ const ClientLogo = ({
 
 export default function ClientLists() {
   return (
-    <section className="mx-auto max-w-3xl py-12 px-6">
+    <section className="mx-auto max-w-3xl py-12 px-6 md:px-0">
       <div className="flex-col items-start justify-start gap-4">
         <div className="flex flex-col items-start justify-start gap-1 self-stretch">
           <div className="justify-start text-base leading-relaxed font-normal text-slate-600">
