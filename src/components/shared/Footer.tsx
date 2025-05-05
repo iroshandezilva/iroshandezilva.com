@@ -12,13 +12,13 @@ export default function Footer() {
         projects, seek design advice, or just say hello.
       </h3>
       <div className="mb-20">
-        <div className="flex justify-between py-2">
+        <Link href="#" className="flex justify-between  py-2 hover:bg-stone-200 -mx-2 px-2 rounded-md">
           <div className="flex items-center gap-3">
             <EnvelopeSimple size={24} weight="bold" />
             <span className="text-base">Email</span>
           </div>
           For quick reply
-        </div>
+        </Link>
       </div>
       <div className="flex flex-col justify-between gap-3 text-sm text-stone-600 md:flex-row">
         <div className="flex gap-2">
