@@ -11,13 +11,13 @@ import Link from "next/link";
 
 const PHOSPHOR_ICON_SIZE = 20;
 const linkVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-xl text-base font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 gap-2 border",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 gap-2 border",
   {
     variants: {
       variant: {
         ai: "bg-indigo-500 text-white hover:bg-indigo-600 border-indigo-700 border-b-4 border-b-indigo-600 shadow-md",
         default:
-          "bg-blue-500 text-primary-foreground hover:bg-blue-600 border-blue-700 border-b-4 border-b-blue-600 shadow-md",
+          "bg-blue-500 text-primary-foreground hover:bg-blue-600 border-blue-700 border-b-4 border-b-blue-600 shadow-md ",
         destructive:
           "bg-red-500 text-destructive-foreground hover:bg-red-600 border-red-700 border-b-4 border-b-red-600 shadow-md",
         outline:
@@ -33,9 +33,9 @@ const linkVariants = cva(
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-lg px-3",
-        lg: "h-14 rounded-2xl px-8",
-        xs: "h-8 rounded-md px-4 text-sm",
+        sm: "h-9  px-3",
+        lg: "h-14 px-8",
+        xs: "h-8  px-4 text-sm",
         icon: "h-10 w-10 border-b border-transparent",
       },
     },
@@ -43,7 +43,7 @@ const linkVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 // Simplify to just use anchor props since we're always rendering anchors
@@ -92,7 +92,7 @@ const CustomLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
       iconWeight = "regular",
       ...props
     },
-    ref
+    ref,
   ) => {
     const SupportIconRender = supportIcon ?? React.Fragment;
     const LeadingIconRender = leadingIcon ?? React.Fragment;
@@ -129,14 +129,15 @@ const CustomLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
     const commonProps = {
       className: cn(
         linkVariants({ variant, size, className }),
-        stretch && "w-full"
+        stretch && "w-full",
       ),
       onClick,
       rel: finalRel,
       // Fix: Ensure aria-label is either a string or undefined, not null
-      "aria-label": (
-        ariaLabel || (typeof children === "string" ? children : undefined)
-      ) as string | undefined,
+      "aria-label": (ariaLabel ||
+        (typeof children === "string" ? children : undefined)) as
+        | string
+        | undefined,
       ...props,
     };
 
@@ -163,7 +164,7 @@ const CustomLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
         {linkContent}
       </motion.a>
     );
-  }
+  },
 );
 
 CustomLink.displayName = "Link";
@@ -176,14 +177,14 @@ export const LinkGroup = React.forwardRef<HTMLDivElement, LinkGroupProps>(
       <div
         ref={ref}
         className={cn(
-          "link-group flex flex-row overflow-hidden rounded-lg border w-fit divide-x",
+          "link-group flex w-fit flex-row divide-x overflow-hidden rounded-lg border",
           "*:rounded-none *:border-none",
-          className
+          className,
         )}
         {...props}
       />
     );
-  }
+  },
 );
 
 LinkGroup.displayName = "LinkGroup";

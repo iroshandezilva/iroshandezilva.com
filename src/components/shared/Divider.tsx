@@ -1,10 +1,15 @@
 import React from "react";
+import { cn } from "@/lib/utils";
 
-const Divider = () => {
+interface DividerProps {
+  className?: string;
+}
+
+const Divider = ({ className }: DividerProps) => {
   return (
     <div
       role="separator"
-      className="md:h-[0.5px] h-px bg-stone-200 w-full max-w-xl md:mx-auto mx-12 "
+      className={cn("md:h-[0.5px] h-px bg-stone-200 w-full max-w-xl md:mx-auto mx-12", className)}
     ></div>
   );
 };
