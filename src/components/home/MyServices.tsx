@@ -11,7 +11,7 @@ import {
 
 const MyServices = () => {
   return (
-    <section className="mx-auto max-w-3xl px-6 pt-16 pb-12 lg:px-0">
+ <section className="mx-auto max-w-3xl px-6 pt-16 pb-12 lg:px-0">
       <div className="inline-flex flex-col items-start justify-start gap-10">
         <div className="flex flex-col items-start justify-start gap-1.5 self-stretch">
           <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-500">
@@ -30,7 +30,7 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
+   <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 MVP Design for SaaS
               </div>
               <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
@@ -47,7 +47,7 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
+ <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 Product Redesign
               </div>
               <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
@@ -65,7 +65,7 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
+<div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 Team Extension
               </div>
               <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
@@ -81,7 +81,7 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
+ <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 UX Audit
               </div>
               <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
@@ -95,7 +95,7 @@ const MyServices = () => {
               <Shapes size={20} weight="fill" />
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
+<div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 Design System
               </div>
               <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">

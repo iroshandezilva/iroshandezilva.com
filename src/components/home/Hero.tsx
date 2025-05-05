@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="mx-auto max-w-3xl px-6 pt-16 pb-12 md:pt-52 lg:px-0">
-      <div className="flex flex-col gap-6 lg:gap-12">
-        <div className="flex flex-col gap-5 lg:pr-20">
-          <div className="block w-24 overflow-hidden rounded-full md:hidden md:w-32">
+ <section className="mx-auto max-w-3xl pt-16 md:pt-52 pb-12 px-6 lg:px-0">
+      <div className="lg:gap-12 gap-6 flex flex-col">
+        <div className="gap-5 flex flex-col lg:pr-20">
+          <div className="w-24 md:w-32 overflow-hidden rounded-full md:hidden block ">
             <Image
               src="/images/iroshandezilva_ux_portrait.webp"
               alt="Hero image"
@@ -20,10 +20,10 @@ export default function Hero() {
               priority
             />
           </div>
-          <h1 className="font-heading text-4xl leading-12 font-semibold text-gray-900 lg:text-5xl lg:leading-16">
+ <h1 className="text-4xl font-heading leading-12 font-semibold text-gray-900 lg:text-5xl lg:leading-16">
             Users Are Leaving Your SaaS I’ll Help You Keep Them
           </h1>
-          <p className="font-body justify-start text-xl leading-8 font-normal text-slate-700 lg:pr-28 lg:text-xl">
+          <p className="font-body justify-start lg:text-xl text-xl  leading-8 font-normal text-slate-700 lg:pr-28">
             By refining your product’s UX, I help you increase activation rates
             and reduce churn
           </p>
