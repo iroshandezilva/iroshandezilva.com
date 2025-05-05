@@ -11,14 +11,13 @@ import {
 
 const MyServices = () => {
   return (
-    <section className="mx-auto max-w-3xl">
-      
+ <section className="mx-auto max-w-3xl px-6 pt-16 pb-12 lg:px-0">
       <div className="inline-flex flex-col items-start justify-start gap-10">
         <div className="flex flex-col items-start justify-start gap-1.5 self-stretch">
-          <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-500">
+          <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-500">
             End-to-end expertise
           </div>
-          <div className="justify-start self-stretch font-['Inter'] text-xl leading-relaxed font-semibold text-black">
+          <div className="justify-start self-stretch text-xl leading-relaxed font-semibold text-black">
             How can I help you
             <br />I get hired to design, fix or scale SaaS products
           </div>
@@ -31,10 +30,10 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-medium text-black">
+   <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 MVP Design for SaaS
               </div>
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-600">
+              <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
                 Hire MVP designers to create an early version of your SaaS
                 product that will be well-received by advisors, investors, and
                 customers alike.
@@ -48,10 +47,10 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-medium text-black">
+ <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 Product Redesign
               </div>
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-600">
+              <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
                 We&apos;ll work together to overhaul your SaaS with a
                 user-centered approach that will increase engagement, retention,
                 and revenue. Say goodbye to a lackluster UX and hello to a
@@ -66,10 +65,10 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-medium text-black">
+<div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 Team Extension
               </div>
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-600">
+              <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
                 I can seamlessly integrate into your product development team
                 and provide solutions to your design challenges.
               </div>
@@ -82,10 +81,10 @@ const MyServices = () => {
               </div>
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-medium text-black">
+ <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 UX Audit
               </div>
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-600">
+              <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
                 I can help you to spot your product’s bottlenecks to unlock its
                 fullest potential.
               </div>
@@ -96,10 +95,10 @@ const MyServices = () => {
               <Shapes size={20} weight="fill" />
             </div>
             <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-medium text-black">
+<div className="justify-start self-stretch text-base leading-snug font-medium text-black">
                 Design System
               </div>
-              <div className="justify-start self-stretch font-['Inter'] text-base leading-snug font-normal text-gray-600">
+              <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
                 Have big plans on scaling your SaaS? I can support you in
                 creating and shaping the design system.
                 <br />

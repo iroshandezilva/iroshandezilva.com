@@ -7,7 +7,8 @@
 
 @font-face {
   font-family: "Switzer";
-  src: url("../../public/fonts/Switzer-Variable.woff2") format("woff2"),
+  src:
+    url("../../public/fonts/Switzer-Variable.woff2") format("woff2"),
     url("../../public/fonts/Switzer-Variable.woff") format("woff"),
     url("../../public/fonts/Switzer-Variable.ttf") format("truetype");
   font-weight: 100 900;
