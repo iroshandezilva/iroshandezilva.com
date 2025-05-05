@@ -2,7 +2,10 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { Spinner } from "@phosphor-icons/react";
-import type { IconProps, Icon } from "@phosphor-icons/react";
+// Fix the import for Icon type
+import type { IconProps } from "@phosphor-icons/react";
+// Import IconWeight type which will be needed
+import type { IconWeight } from "@phosphor-icons/react";
 import { motion, MotionProps } from "framer-motion";
 import Link from "next/link";
 
@@ -50,8 +53,9 @@ type MotionAnchorPropsType = React.AnchorHTMLAttributes<HTMLAnchorElement> &
 
 export interface LinkProps extends MotionAnchorPropsType {
   asChild?: boolean;
-  supportIcon?: Icon<IconProps>;
-  leadingIcon?: Icon<IconProps>;
+  // Fix: Use React.ComponentType<IconProps> instead of Icon<IconProps>
+  supportIcon?: React.ComponentType<IconProps>;
+  leadingIcon?: React.ComponentType<IconProps>;
   isLoading?: boolean;
   stretch?: boolean;
   href?: string;
@@ -61,7 +65,8 @@ export interface LinkProps extends MotionAnchorPropsType {
   rel?: string;
   ariaLabel?: string;
   iconSize?: number;
-  iconWeight?: string;
+  // Update iconWeight to use the proper type
+  iconWeight?: IconWeight;
 }
 
 const CustomLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
@@ -128,8 +133,10 @@ const CustomLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
       ),
       onClick,
       rel: finalRel,
-      "aria-label":
-        ariaLabel || typeof children === "string" ? children : undefined,
+      // Fix: Ensure aria-label is either a string or undefined, not null
+      "aria-label": (
+        ariaLabel || (typeof children === "string" ? children : undefined)
+      ) as string | undefined,
       ...props,
     };
 
