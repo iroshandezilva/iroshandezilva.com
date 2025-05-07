@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto mt-12 flex max-w-md rounded-xl bg-stone-200/40 p-6">
-        <div className="w-4">
+        <div className="">
           <svg
             width="37"
             height="63"
@@ -117,8 +117,9 @@ export default function Hero() {
 
         <div className="flex basis-full flex-col gap-3 px-4">
           <p className="text-center text-xs">
-            …they will immediately uplevel your team and product. If you get the
-            chance to work with them, do it.
+            …Working with Iroshan instantly raised the quality of our product
+            and design. If you get the opportunity, don’t think twice — just
+            bring him on..
           </p>
           <div className="flex items-center justify-center">
             <div className="h-8 w-8 rounded-full bg-stone-300">
@@ -138,7 +139,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-6">
+        <div className="">
           <svg
             width="37"
             height="63"
