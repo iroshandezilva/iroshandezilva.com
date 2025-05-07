@@ -9,7 +9,7 @@ export default function AboutPage() {
             I'm a senior freelance product designer crafting intuitive,
             user-focused experiences.
           </h1>
-          <div className="border-stone-00 flex flex-col items-start justify-start gap-8 self-stretch">
+          <div className="border-stone-100 flex flex-col items-start justify-start gap-8 self-stretch">
             <Image
               src="/images/portrait-iroshandezilva.webp"
               alt="Iroshan De Zilva"
