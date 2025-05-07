@@ -9,7 +9,10 @@ const Divider = ({ className }: DividerProps) => {
   return (
     <div
       role="separator"
-      className={cn("md:h-[0.5px] h-px bg-stone-200 w-full max-w-xl md:mx-auto mx-12", className)}
+      className={cn(
+        "mx-12 h-px max-w-xl bg-stone-200 md:mx-auto md:h-[0.5px]",
+        className,
+      )}
     ></div>
   );
 };

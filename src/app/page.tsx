@@ -4,7 +4,7 @@ import CaseStudyHighlight from "@/components/home/CaseStudyHighlight";
 import MyServices from "@/components/home/MyServices";
 // import MyPackages from "@/components/home/MyPackages";
 
-// import Divider from "@/components/shared/Divider";
+import Divider from "@/components/shared/Divider";
 
 export default function HomePage() {
   return (
@@ -14,6 +14,9 @@ export default function HomePage() {
       {/* <ClientLists /> */}
       {/* <Divider /> */}
       <CaseStudyHighlight />
+      
+      <Divider />
+
       <MyServices />
       {/* <MyPackages /> */}
     </>
