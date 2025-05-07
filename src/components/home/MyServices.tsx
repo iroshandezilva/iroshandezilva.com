@@ -51,7 +51,7 @@ export default function MyServices() {
           <span className="text-sm font-medium tracking-widest text-stone-400 uppercase">
             End-to-end expertise
           </span>
-          <h2 className="font-heading text-5xl text-stone-900">
+          <h2 className="font-heading text-3xl text-stone-900 md:text-5xl">
             How can I help you
           </h2>
         </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@phosphor-icons/react": "^2.1.7",
     "@tabler/icons-react": "^3.31.0",
     "@tailwindcss/typography": "^0.5.16",

@@ -44,7 +44,7 @@ export default function CaseStudyCard({
 
   return (
     <div
-      className={`mx-auto flex ${isColumn ? "flex-col" : "flex-col lg:flex-row"} items-center gap-9 ${className}`}
+      className={`mx-auto flex w-full ${isColumn ? "flex-col" : "flex-col lg:flex-row"} items-center gap-9 ${className}`}
     >
       <div className={`w-full ${!isColumn ? "lg:w-1/2" : ""}`}>
         <Image
@@ -72,7 +72,7 @@ export default function CaseStudyCard({
               {year}
             </div>
           </div>
-          <h3 className="font-heading justify-start self-stretch text-xl leading-normal text-slate-900 md:text-3xl lg:leading-9">
+          <h3 className="font-heading justify-start self-stretch text-3xl leading-normal text-slate-900 md:text-3xl lg:leading-9">
             {title}
           </h3>
         </div>
@@ -98,8 +98,8 @@ export default function CaseStudyCard({
         )}
 
         {testimonial && (
-          <div className="inline-flex flex-col items-start justify-start bg-stone-200/40 p-6">
-            <div className="justify-start self-stretch text-sm leading-normal font-normal text-slate-600">
+          <div className="inline-flex flex-col items-start justify-start rounded-lg bg-stone-200/40 p-6">
+            <div className="jutify-start self-stretch text-sm leading-normal font-normal text-slate-600">
               {testimonial}
             </div>
             {(clientName || clientTitle) && (
