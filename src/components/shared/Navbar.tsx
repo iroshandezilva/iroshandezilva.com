@@ -9,7 +9,7 @@ export default function Navbar() {
         <Link className="flex items-center justify-center gap-2" href={"/"}>
           <div className="h-12 w-12 overflow-hidden rounded-full bg-stone-200">
             <Image
-              src="/Images/Profile-Picture-Avatar.webp"
+              src="/images/Profile-Picture-Avatar.webp"
               alt="Hero image"
               width={0}
               height={0}
