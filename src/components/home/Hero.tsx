@@ -31,7 +31,8 @@ export default function Hero() {
 
         <div className="mx-auto flex w-full flex-col gap-4 md:w-auto md:flex-row lg:gap-3">
           <CustomLink
-            href="/contact"
+            target="_blank"
+            href="https://cal.com/iroshandezilva/client-consultation"
             className="w-full lg:w-auto"
             variant="ai"
             size="lg"
@@ -39,14 +40,14 @@ export default function Hero() {
           >
             Schedule an intro
           </CustomLink>
-          <CustomLink
+          {/* <CustomLink
             href="/contact"
             className="w-full lg:w-auto"
             variant="outline"
             size="lg"
           >
             View work
-          </CustomLink>
+          </CustomLink> */}
         </div>
       </div>
 

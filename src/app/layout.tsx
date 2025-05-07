@@ -1,14 +1,30 @@
 import "./globals.css";
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Iroshan De Zilva — Product Designer",
   description: "Portfolio website and UX case studies.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    shortcut: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Iroshan De Zilva — Product Designer",
+    description: "Portfolio website and UX case studies.",
+    images: ["/opengraph-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Iroshan De Zilva — Product Designer",
+    description: "Portfolio website and UX case studies.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
