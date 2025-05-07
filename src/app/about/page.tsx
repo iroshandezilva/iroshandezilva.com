@@ -13,8 +13,7 @@ export default function AboutPage() {
             <Image
               src="/images/portrait-iroshandezilva.webp"
               alt="Iroshan De Zilva"
-              width={0}
-              height={0}
+              layout="responsive"
               sizes="100vw"
               className="h-auto w-full rounded-xl border border-black/10"
               priority
