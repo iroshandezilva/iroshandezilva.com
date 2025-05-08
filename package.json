@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
+    "@microsoft/clarity": "^1.0.0",
     "@phosphor-icons/react": "^2.1.7",
     "@tabler/icons-react": "^3.31.0",
     "@tailwindcss/typography": "^0.5.16",
@@ -22,6 +23,7 @@
     "next": "15.3.0",
     "next-mdx-remote": "^5.0.0",
     "next-video": "^2.2.0",
+    "posthog-js": "^1.240.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.2.0",
