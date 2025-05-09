@@ -1,11 +1,11 @@
 import Link from "next/link";
-// import NavLink from "./NavLink";
+import NavLink from "./NavLink";
 import Image from "next/image";
 
 export default function Navbar() {
   return (
     <header className="w-full">
-      <div className="texce mx-auto flex max-w-3xl items-center justify-center px-4 py-10">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-10">
         <Link className="flex items-center justify-center gap-2" href={"/"}>
           <div className="h-12 w-12 overflow-hidden rounded-full bg-stone-200">
             <Image
@@ -27,12 +27,13 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* <nav className="space-x-4">
+        <nav className="space-x-4">
           <NavLink href="/">Home</NavLink>
+          <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/stack">Stack</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-        </nav> */}
+        </nav>
       </div>
     </header>
   );
