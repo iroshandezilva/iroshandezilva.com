@@ -7,7 +7,11 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   /* config options here */
-  serverActions: true,
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["*"],
+    },
+  },
   images: {
     domains: ["images.unsplash.com"],
   },

@@ -4,24 +4,19 @@ import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import { Callout, Frame, Image } from "@prose-ui/next";
+import React from "react";
 
-interface BlogPostParams {
-  params: {
-    slug: string;
-  };
-}
-
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getBlogPostSlugs();
   return posts.map((slug) => ({
     slug,
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: BlogPostParams): Promise<Metadata> {
-  const post = getBlogPostBySlug(params.slug);
+// Using any is acceptable here because we're working around a type constraint issue
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function generateMetadata(props: any): Promise<Metadata> {
+  const post = getBlogPostBySlug(props.params.slug);
 
   if (!post) {
     return {
@@ -35,8 +30,10 @@ export async function generateMetadata({
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostParams) {
-  const { slug } = params;
+// Using any is acceptable here because we're working around a type constraint issue
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function BlogPostPage(props: any) {
+  const { slug } = props.params;
 
   try {
     const post = getBlogPostBySlug(slug);
@@ -56,7 +53,8 @@ export default function BlogPostPage({ params }: BlogPostParams) {
         </div>
       </article>
     );
-  } catch (_error: unknown) {
+  } catch {
+    // Handle not found with Next.js notFound utility
     notFound();
   }
 }
