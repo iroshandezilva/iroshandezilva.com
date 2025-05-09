@@ -13,7 +13,7 @@ export default function CaseStudyHighlight() {
             <span className="text-sm font-medium tracking-widest text-stone-400 uppercase">
               LAST UPDATED February 26, 2025
             </span>
-            <h2 className="font-heading text-5xl text-stone-900">
+            <h2 className="font-heading text-3xl text-stone-900 lg:text-5xl">
               Select work
             </h2>
             <p className="mt-2 text-base leading-normal text-slate-600">
@@ -22,9 +22,9 @@ export default function CaseStudyHighlight() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-14">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-14 lg:grid-cols-2">
             <CaseStudyCard
-              className="col-span-2"
+              className="lg:col-span-2"
               imageSrc="/images/leavedates-cs-thumbnail.webp"
               productName="Leave Dates"
               productColor="text-cyan-500"
