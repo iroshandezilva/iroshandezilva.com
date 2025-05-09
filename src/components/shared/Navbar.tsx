@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NavLink from "./NavLink";
+// import NavLink from "./NavLink";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -27,13 +27,13 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <nav className="space-x-4">
+        {/* <nav className="space-x-4">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/stack">Stack</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
