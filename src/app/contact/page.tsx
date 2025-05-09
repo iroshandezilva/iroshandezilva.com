@@ -19,8 +19,10 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center p-8">
-      <h1 className="mb-6 text-3xl font-bold">Book a Free Discovery Call</h1>
+    <section className="flex flex-col items-center pt-28">
+      <h1 className="font-heading mb-18 text-3xl text-stone-900 md:text-5xl">
+        Book a Free Discovery Call
+      </h1>
       <div className="w-full max-w-4xl">
         <Cal
           namespace="client-consultation"

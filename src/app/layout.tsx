@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Iroshan De Zilva — Product Designer",
@@ -57,6 +58,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

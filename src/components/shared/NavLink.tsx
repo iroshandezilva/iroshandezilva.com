@@ -16,7 +16,11 @@ export default function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className={isActive ? "font-medium text-blue-600" : "hover:text-blue-500"}
+      className={`transition-colors duration-200 ${
+        isActive
+          ? "font-medium text-blue-600"
+          : "text-stone-600 hover:text-blue-500"
+      }`}
     >
       {children}
     </Link>
