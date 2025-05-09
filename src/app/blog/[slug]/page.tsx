@@ -39,7 +39,7 @@ export default function BlogPostPage(props: any) {
     const post = getBlogPostBySlug(slug);
 
     return (
-      <article className="prose-ui container mx-auto max-w-3xl px-4 py-12">
+      <article className="prose-ui container mx-auto max-w-3xl !bg-transparent px-4 py-12">
         <BlogHeader post={post} />
         <div className="prose dark:prose-invert max-w-none">
           <MDXRemote
