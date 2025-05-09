@@ -134,8 +134,8 @@ export default function Hero() {
               />
             </div>
             <div className="ml-2 flex flex-col">
-              <span className="text-sm font-medium">Alex Roe</span>
-              <span className="text-xs">Founder @ Summit</span>
+              <span className="text-sm font-medium">Phil Nortan</span>
+              <span className="text-xs">Founder @LeaveDates</span>
             </div>
           </div>
         </div>
