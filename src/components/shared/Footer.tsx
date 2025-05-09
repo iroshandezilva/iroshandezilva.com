@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <Link
             target="_blank"
-            href="https://github.com/iroshandezilva/my-portfolio"
+            href="https://github.com/iroshandezilva/iroshandezilva.com"
             className="flex gap-1 text-stone-500 hover:text-stone-800"
           >
             <GithubLogo size={16} weight="fill" />
