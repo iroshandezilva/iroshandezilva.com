@@ -19,9 +19,34 @@ export default function WritingsPage() {
         <h1 className="font-heading mb-4 text-3xl text-stone-900 lg:text-5xl">
           Not a blog. More like a trace
         </h1>
-        <p className="text-muted-foreground text-lg">
-          Loose notes on design, code, and everything in between.
-        </p>
+        <div className="flex items-center justify-between">
+          <p className="text-muted-foreground text-lg">
+            Loose notes on design, code, and everything in between.
+          </p>
+          <a
+            href="/rss.xml"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-sm font-medium text-stone-600 transition-colors hover:text-stone-900"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M4 11a9 9 0 0 1 9 9" />
+              <path d="M4 4a16 16 0 0 1 16 16" />
+              <circle cx="5" cy="19" r="1" />
+            </svg>
+            RSS Feed
+          </a>
+        </div>
       </div>
 
       {/* Featured Posts Section - Bento Grid */}

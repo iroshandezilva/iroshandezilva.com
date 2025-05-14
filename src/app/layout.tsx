@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     description: "Portfolio website and UX case studies.",
     images: ["/opengraph-image.png"],
   },
+  alternates: {
+    types: {
+      "application/rss+xml": "https://iroshandezilva.com/rss.xml",
+    },
+  },
 };
 
 export default function RootLayout({

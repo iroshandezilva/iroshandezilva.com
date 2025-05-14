@@ -24,6 +24,7 @@
     "@vercel/analytics": "^1.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "feed": "^5.0.1",
     "framer-motion": "^12.7.4",
     "geist": "^1.4.2",
     "gray-matter": "^4.0.3",
