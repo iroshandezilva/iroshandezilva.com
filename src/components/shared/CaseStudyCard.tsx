@@ -2,6 +2,12 @@ import Image from "next/image";
 // import { ArrowRight } from "@phosphor-icons/react";
 // import { CustomLink } from "@/components/shared/3d-button";
 
+// Helper function for generating accessible alt text for mockup images
+const getMockupAlt = (
+  productName: string,
+  featureOrScreen: string = "interface",
+) => `${productName} case study thumbnail showing mockup of ${featureOrScreen}`;
+
 interface Stat {
   value?: string | number;
   description: string;
@@ -22,6 +28,7 @@ interface CaseStudyCardProps {
   link: string;
   caseStudyButtonText?: string;
   variant?: "row" | "column";
+  featureOrScreen?: string; // Add new prop for feature/screen description
 }
 
 export default function CaseStudyCard({
@@ -39,6 +46,7 @@ export default function CaseStudyCard({
   // link,
   // caseStudyButtonText = "Read the case study",
   variant = "row",
+  featureOrScreen, // New prop for alt text
 }: CaseStudyCardProps) {
   const isColumn = variant === "column";
 
@@ -49,7 +57,7 @@ export default function CaseStudyCard({
       <div className={`w-full ${!isColumn ? "lg:w-1/2" : ""}`}>
         <Image
           src={imageSrc}
-          alt={productName + " platform screenshot"}
+          alt={getMockupAlt(productName, featureOrScreen)}
           width={0}
           height={0}
           sizes="100vw"
@@ -68,7 +76,7 @@ export default function CaseStudyCard({
             >
               {productName}
             </div>
-            <div className="text-base leading-tight font-normal text-stone-400">
+            <div className="text-base leading-tight font-normal text-stone-600">
               {year}
             </div>
           </div>

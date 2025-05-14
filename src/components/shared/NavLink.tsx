@@ -16,10 +16,10 @@ export default function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className={`transition-colors duration-200 ${
+      className={`rounded-lg px-4 py-2 transition-colors duration-200 ${
         isActive
-          ? "font-medium text-blue-600"
-          : "text-stone-600 hover:text-blue-500"
+          ? "bg-blue-100 font-medium text-blue-600 md:bg-transparent"
+          : "text-stone-60 md:hover:text-blue-500"
       }`}
     >
       {children}

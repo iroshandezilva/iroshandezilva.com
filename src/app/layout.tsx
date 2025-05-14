@@ -18,13 +18,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Iroshan De Zilva — Product Designer",
     description: "Portfolio website and UX case studies.",
-    images: ["/opengraph-image.png"],
+    images: ["/images/og_image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Iroshan De Zilva — Product Designer",
     description: "Portfolio website and UX case studies.",
     images: ["/opengraph-image.png"],
+  },
+  alternates: {
+    types: {
+      "application/rss+xml": "https://iroshandezilva.com/rss.xml",
+    },
   },
 };
 

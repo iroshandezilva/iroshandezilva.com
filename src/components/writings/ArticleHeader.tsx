@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { BlogPost } from "@/lib/blog-utils";
+import { Article } from "@/lib/writings-utils";
 
-interface BlogHeaderProps {
-  post: BlogPost;
+interface ArticleHeaderProps {
+  post: Article;
 }
 
-export default function BlogHeader({ post }: BlogHeaderProps) {
+export default function ArticleHeader({ post }: ArticleHeaderProps) {
   const { frontMatter } = post;
   const { title, date, coverImage, tags } = frontMatter;
 
