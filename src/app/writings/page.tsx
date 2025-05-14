@@ -13,7 +13,7 @@ export default function WritingsPage() {
   const recentPosts = getRecentArticles();
 
   return (
-    <div className="container mx-auto max-w-3xl px-6 pb-12 lg:pt-24">
+    <div className="container mx-auto max-w-3xl px-6 pt-16 pb-12 lg:pt-24">
       {/* Page Header */}
       <div className="mb-10">
         <h1 className="font-heading mb-4 text-3xl text-stone-900 lg:text-5xl">
