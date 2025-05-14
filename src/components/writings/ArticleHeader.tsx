@@ -31,9 +31,7 @@ export default function ArticleHeader({ post }: ArticleHeaderProps) {
         </Link>
         <time className="text-muted-foreground text-sm">{formattedDate}</time>
       </div>
-      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
-        {title}
-      </h1>
+
       <div className="mb-8 flex items-center">
         {tags && tags.length > 0 && (
           <div className="ml-4 flex flex-wrap gap-2">
@@ -60,6 +58,9 @@ export default function ArticleHeader({ post }: ArticleHeaderProps) {
           />
         </div>
       )}
+      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
+        {title}
+      </h1>
     </header>
   );
 }
