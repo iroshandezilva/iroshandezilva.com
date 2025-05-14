@@ -1,16 +1,4 @@
-import { getArticexport async function generateMetadata(props: any): Promise<Metadata> {
-  const article = getArticleBySlug(props.params.slug);
-
-  if (!article) {
-    return {
-      title: "Article Not Found",
-    };
-  }
-
-  return {
-    title: `${article.frontMatter.title} | Writings`,
-    description: article.frontMatter.excerpt,
-  };ArticleSlugs } from "@/lib/writings-utils";
+import { getArticleBySlug, getArticleSlugs } from "@/lib/writings-utils";
 import ArticleHeader from "@/components/writings/ArticleHeader";
 import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -28,7 +16,8 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 // Using any is acceptable here because we're working around a type constraint issue
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata(props: any): Promise<Metadata> {
-  const post = getBlogPostBySlug(props.params.slug);
+  const { slug } = await props.params;
+  const post = getArticleBySlug(slug);
 
   if (!post) {
     return {
@@ -44,11 +33,11 @@ export async function generateMetadata(props: any): Promise<Metadata> {
 
 // Using any is acceptable here because we're working around a type constraint issue
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function WritingPage(props: any) {
-  const { slug } = props.params;
+export default async function WritingPage(props: any) {
+  const { slug } = await props.params;
 
   try {
-    const post = getBlogPostBySlug(slug);
+    const post = getArticleBySlug(slug);
 
     return (
       <article className="prose-ui container mx-auto max-w-3xl !bg-transparent px-4 py-12">
