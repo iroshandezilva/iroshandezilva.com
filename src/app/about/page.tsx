@@ -9,14 +9,9 @@ export default function AboutPage() {
         aria-labelledby="about-hero"
       >
         <div className="inline-flex flex-col items-start justify-start gap-10">
-          <h1
-            id="about-hero"
-            className="font-heading text-center text-4xl leading-12 text-gray-900 lg:text-5xl lg:leading-16"
-          >
+          <h1 className="font-heading text-center text-4xl leading-12 text-gray-900 lg:text-5xl lg:leading-16">
             I’m a product designer who helps people feel,{" "}
-            <span className="italic" aria-label="oh, that makes sense">
-              “oh, that makes sense”
-            </span>
+            <span className="italic"> “oh, that makes sense"</span>
           </h1>
           <figure className="flex flex-col items-start justify-start gap-8 self-stretch border-stone-100">
             <Image
