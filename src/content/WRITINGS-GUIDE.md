@@ -35,6 +35,52 @@ Up to 5 posts marked as `featured: true` will be displayed in the featured secti
 
 If no posts are explicitly marked as featured, the system will automatically display the 5 most recent posts in the featured section.
 
+## Using the Figure Component
+
+For images within your blog posts, use the `Figure` component. It provides consistent styling and supports captions and different alignments:
+
+```mdx
+<Figure
+  src="/path/to/image.jpg"
+  alt="Descriptive alt text"
+  caption="Your caption text"
+/>
+```
+
+### Alignment Options
+
+The Figure component supports three alignment options:
+
+```mdx
+<!-- Left-aligned (default) -->
+
+<Figure
+  src="/path/to/image.jpg"
+  alt="Alt text"
+  caption="Left-aligned caption"
+/>
+
+<!-- Center-aligned -->
+
+<Figure
+  src="/path/to/image.jpg"
+  alt="Alt text"
+  caption="Center-aligned caption"
+  align="center"
+/>
+
+<!-- Right-aligned -->
+
+<Figure
+  src="/path/to/image.jpg"
+  alt="Alt text"
+  caption="Right-aligned caption"
+  align="right"
+/>
+```
+
+For more details, see the [FIGURE-GUIDE.md](/src/content/FIGURE-GUIDE.md).
+
 ## Tips for Creating Great Blog Posts
 
 1. Use a clear, descriptive title
@@ -63,6 +109,13 @@ Introduction paragraph goes here...
 ## Section Heading
 
 Content for this section...
+
+<Figure
+  src="/images/example-screenshot.jpg"
+  alt="Screenshot of a Next.js blog homepage"
+  caption="A modern blog built with Next.js and MDX"
+  align="center"
+/>
 
 <Callout variant="note" title="Note">
   Important information that deserves attention.

@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Article } from "@/lib/writings-utils";
+import Link from "next/link";
+import { CaretLeft } from "@phosphor-icons/react";
 
 interface ArticleHeaderProps {
   post: Article;
@@ -17,11 +21,20 @@ export default function ArticleHeader({ post }: ArticleHeaderProps) {
 
   return (
     <header className="mb-10">
+      <div className="mb-4 flex items-center justify-between">
+        <Link
+          className="flex items-center gap-1 text-sm text-gray-600 hover:text-stone-900"
+          href={"/writings"}
+        >
+          <CaretLeft size={20} weight="bold" />
+          Back to Writings
+        </Link>
+        <time className="text-muted-foreground text-sm">{formattedDate}</time>
+      </div>
       <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
         {title}
       </h1>
       <div className="mb-8 flex items-center">
-        <time className="text-muted-foreground">{formattedDate}</time>
         {tags && tags.length > 0 && (
           <div className="ml-4 flex flex-wrap gap-2">
             {tags.map((tag) => (

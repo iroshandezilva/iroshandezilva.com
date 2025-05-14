@@ -3,7 +3,9 @@ import ArticleHeader from "@/components/writings/ArticleHeader";
 import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
-import { Callout, Frame, Image } from "@prose-ui/next";
+import { Callout } from "@prose-ui/next";
+import EnhancedImage from "@/components/shared/EnhancedImage";
+import { Figure } from "@/components/ui/figure";
 import React from "react";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -46,8 +48,22 @@ export default function WritingPage(props: any) {
             source={article.content}
             components={{
               Callout,
-              Frame,
-              Image,
+              // Override the Frame component to use our custom Figure
+              Frame: ({
+                caption,
+                children,
+                align,
+              }: {
+                caption?: string;
+                children?: React.ReactNode;
+                align?: "left" | "center" | "right";
+              }) => (
+                <Figure caption={caption} align={align || "left"}>
+                  {children}
+                </Figure>
+              ),
+              Figure,
+              Image: EnhancedImage,
             }}
           />
         </div>
