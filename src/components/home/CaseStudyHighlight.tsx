@@ -10,7 +10,7 @@ export default function CaseStudyHighlight() {
       <div>
         <div>
           <div className="mx-auto mb-8 flex max-w-lg flex-col gap-4 py-4 text-center">
-            <span className="text-sm font-medium tracking-widest text-stone-400 uppercase">
+            <span className="text-sm font-medium tracking-widest text-stone-600 uppercase">
               LAST UPDATED February 26, 2025
             </span>
             <h2 className="font-heading text-3xl text-stone-900 lg:text-5xl">
@@ -26,6 +26,7 @@ export default function CaseStudyHighlight() {
             <CaseStudyCard
               className="lg:col-span-2"
               imageSrc="/images/leavedates-cs-thumbnail.webp"
+              featureOrScreen="leave types settings screen"
               productName="Leave Dates"
               productColor="text-cyan-500"
               year="2023"
@@ -46,6 +47,7 @@ export default function CaseStudyHighlight() {
               variant="column"
               imageSrc="/images/brolly-cs-thumbnail.webp"
               productName="Brolly"
+              featureOrScreen="home screen"
               productColor="text-indigo-500"
               year="2023"
               title="Designing Brolly's POC for Instant, Affordable Loans"
@@ -55,6 +57,7 @@ export default function CaseStudyHighlight() {
             <CaseStudyCard
               variant="column"
               imageSrc="/images/superpaper-cs-thumbnail.webp"
+              featureOrScreen="chat with PDF screen"
               productName="SuperLoop"
               productColor="text-blue-500"
               year="2023"

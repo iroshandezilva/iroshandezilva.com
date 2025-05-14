@@ -23,13 +23,13 @@ export default function ServiceCard({
     >
       <div className="flex w-8 items-center justify-center gap-1 overflow-hidden rounded-lg bg-white px-[5px] py-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.10)] outline outline-1 outline-offset-[-1px] outline-neutral-300">
         <div className="relative h-5 w-5">
-          <Icon size={20} weight="fill" />
+          <Icon size={20} weight="fill" aria-hidden="true" />
         </div>
       </div>
       <div className="inline-flex flex-1 flex-col items-start justify-start gap-1">
-        <div className="justify-start self-stretch text-base leading-snug font-medium text-black">
+        <h4 className="justify-start self-stretch text-base leading-snug font-medium text-black">
           {title}
-        </div>
+        </h4>
         <div className="justify-start self-stretch text-base leading-snug font-normal text-gray-600">
           {description}
         </div>

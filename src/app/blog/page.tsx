@@ -11,7 +11,7 @@ export default function BlogPage() {
   const posts = getAllBlogPosts();
 
   return (
-    <main className="container mx-auto max-w-3xl py-12">
+    <section className="container mx-auto max-w-3xl py-12">
       <div className="mb-10">
         <h1 className="mb-4 text-4xl font-bold">Blog</h1>
         <p className="text-muted-foreground text-xl">
@@ -33,6 +33,6 @@ export default function BlogPage() {
           </p>
         </div>
       )}
-    </main>
+    </section>
   );
 }

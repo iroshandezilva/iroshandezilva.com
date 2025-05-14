@@ -48,7 +48,7 @@ export default function MyServices() {
     <section className="mx-auto max-w-3xl px-6 py-24 lg:px-0">
       <div className="inline-flex flex-col items-start justify-start gap-10">
         <div className="mx-auto flex max-w-lg flex-col gap-4 py-4 text-center">
-          <span className="text-sm font-medium tracking-widest text-stone-400 uppercase">
+          <span className="text-sm font-medium tracking-widest text-stone-600 uppercase">
             End-to-end expertise
           </span>
           <h2 className="font-heading text-3xl text-stone-900 md:text-5xl">
