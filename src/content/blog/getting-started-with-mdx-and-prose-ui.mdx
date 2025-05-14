@@ -33,13 +33,43 @@ Here are some of the key features that make Prose UI stand out:
 Here's a simple React component using Prose UI:
 
 ```tsx
-import { Frame, Image } from "@prose-ui/next";
+import { Image } from "@prose-ui/next";
+import { Figure } from "@/components/ui/figure";
 
 export default function MyComponent() {
   return (
-    <Frame caption="A beautiful mountain landscape">
-      <Image src="/images/mountain.jpg" alt="Mountain landscape" />
-    </Frame>
+    <Figure
+      src="/images/mountain.jpg"
+      alt="Mountain landscape"
+      caption="A beautiful mountain landscape"
+    />
+  );
+}
+
+// You can also align your figures
+export function AlignedFigures() {
+  return (
+    <>
+      <Figure
+        src="/images/mountain.jpg"
+        alt="Left-aligned mountain"
+        caption="Default: Left-aligned figure"
+      />
+
+      <Figure
+        src="/images/mountain.jpg"
+        alt="Center-aligned mountain"
+        caption="Center-aligned figure"
+        align="center"
+      />
+
+      <Figure
+        src="/images/mountain.jpg"
+        alt="Right-aligned mountain"
+        caption="Right-aligned figure"
+        align="right"
+      />
+    </>
   );
 }
 ```

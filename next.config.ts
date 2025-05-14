@@ -27,7 +27,13 @@ const nextConfig: NextConfig = {
     },
   },
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "webassets.linear.app"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };

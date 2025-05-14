@@ -1,0 +1,65 @@
+---
+title: Figure Component Test
+date: "2024-05-15"
+excerpt: Testing our custom Figure component
+tags: ["Development", "UI"]
+---
+
+# Testing Our Custom Figure Component
+
+Below is an example using our custom Figure component:
+
+<Figure
+  src="/content/the-courage-to-be-disliked-by-ichiro-kishimi--fumitake-koga---visual-selection.png"
+  alt="A lone figure walking left. A crowd facing right."
+  caption="A lone figure walking left. A crowd facing right."
+/>
+
+## Centered Figure
+
+<Figure
+  src="/content/the-courage-to-be-disliked-by-ichiro-kishimi--fumitake-koga---visual-selection.png"
+  alt="A lone figure walking left. A crowd facing right."
+  caption="A lone figure walking left. A crowd facing right."
+  align="center"
+/>
+
+## Right-aligned Figure
+
+<Figure
+  src="/content/the-courage-to-be-disliked-by-ichiro-kishimi--fumitake-koga---visual-selection.png"
+  alt="A lone figure walking left. A crowd facing right."
+  caption="A lone figure walking left. A crowd facing right."
+  align="right"
+/>
+
+## Legacy Frame Component vs Figure Component
+
+### Legacy Frame way (still works)
+
+<Frame caption="A lone figure walking left. A crowd facing right.">
+  <Image
+    src="/content/the-courage-to-be-disliked-by-ichiro-kishimi--fumitake-koga---visual-selection.png"
+    alt="A lone figure walking left. A crowd facing right."
+  />
+</Frame>
+
+### New Figure way (simpler and more flexible)
+
+```jsx
+// The old way
+<Frame caption="A lone figure walking left. A crowd facing right.">
+  <Image
+    src="/content/the-courage-to-be-disliked-by-ichiro-kishimi--fumitake-koga---visual-selection.png"
+    alt="A lone figure walking left. A crowd facing right."
+  />
+</Frame>
+
+// The new way - cleaner and supports alignment
+<Figure
+  src="/content/the-courage-to-be-disliked-by-ichiro-kishimi--fumitake-koga---visual-selection.png"
+  alt="A lone figure walking left. A crowd facing right."
+  caption="A lone figure walking left. A crowd facing right."
+  align="center"
+/>
+```
