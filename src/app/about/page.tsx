@@ -95,7 +95,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section aria-labelledby="about-approach">
+          <section aria-labelledby="about-approach" className="py-24">
             <h2
               id="about-approach"
               className="mb-6 text-sm font-medium tracking-widest text-stone-600 uppercase"

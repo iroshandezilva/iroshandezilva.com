@@ -32,7 +32,7 @@ export default function ClientLogo({
       width={0}
       height={0}
       sizes="100vw"
-      className={`h-auto w-full max-w-[150px]`}
+      className={`h-auto w-full max-w-[150px] opacity-70`}
       priority={priority}
     />
   );

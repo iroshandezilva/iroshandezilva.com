@@ -15,7 +15,7 @@ export default function ArticleTable({ posts }: ArticleTableProps) {
   }
 
   return (
-    <div className="divide-y divide-stone-200">
+    <div>
       {posts.map((post) => {
         const { slug, frontMatter } = post;
         const { title, date, tags } = frontMatter;
@@ -33,11 +33,11 @@ export default function ArticleTable({ posts }: ArticleTableProps) {
           <Link
             href={`/writings/${slug}`}
             key={slug}
-            className="-mx-2 flex flex-col justify-between rounded px-2 py-4 transition hover:bg-stone-50 sm:flex-row sm:items-center"
+            className="-mx-6 flex flex-col justify-between rounded-lg px-6 py-4 transition hover:bg-stone-200/60 sm:flex-row sm:items-center"
           >
-            <p className="text-base font-medium text-stone-900">{title}</p>
+            <h3 className="text-base font-medium text-stone-900">{title}</h3>
             <div className="mt-2 flex items-center gap-4 sm:mt-0">
-              <span className="rounded bg-stone-100 px-2 py-0.5 text-sm text-stone-600">
+              <span className="rounded px-2 py-0.5 text-sm text-stone-600">
                 {category}
               </span>
               <span className="text-sm text-stone-500">{formattedDate}</span>

@@ -24,7 +24,7 @@
   --font-hand: "Caveat", cursive;
   --font-geist: "Geist", sans-serif;
   --shadow-image: 0px 3.2px 6.4px 0px rgba(0, 0, 0, 0.05);
-
+  --color-surface: oklch(0.98 0 102.07);
   /* Prose UI font settings */
   --p-font-family: "Switzer", sans-serif;
   --p-font-family-heading: "Instrument Serif", serif;
@@ -32,8 +32,7 @@
 }
 
 body {
-  background: oklch(0.98 0 102.07);
-  @apply font-geist;
+  @apply font-geist bg-surface;
 }
 
 p {

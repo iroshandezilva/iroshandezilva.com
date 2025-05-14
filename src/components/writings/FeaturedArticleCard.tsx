@@ -12,19 +12,18 @@ export default function FeaturedArticleCard({
   className = "",
 }: FeaturedArticleCardProps) {
   const { slug, frontMatter } = post;
-  const { title, excerpt, coverImage, tags } = frontMatter;
+  const { title, coverImage, tags } = frontMatter;
 
   // Use the first tag as category if available
   const category = tags && tags.length > 0 ? tags[0] : "Article";
 
   // Default image if none provided
-  const imageUrl =
-    coverImage || "/images/leio-mclaren-L2dTmhQzx4Q-unsplash.jpg";
+  const imageUrl = coverImage || "/images/default_thumbnail_writings.png";
 
   return (
     <Link
       href={`/writings/${slug}`}
-      className={`group col-span-2 block overflow-hidden rounded-xl border border-stone-200 bg-white transition ${className}`}
+      className={`group bg-surface col-span-2 block overflow-hidden rounded-xl border border-stone-200 filter transition hover:border-stone-300 hover:brightness-[110%] ${className}`}
     >
       <div className="relative aspect-[4/3]">
         <Image

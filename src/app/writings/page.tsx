@@ -41,7 +41,11 @@ export default function WritingsPage() {
 
       {/* Recent Posts Section - Table Layout */}
       <section>
-        <h2 className="mb-6 text-xl font-bold">All Articles</h2>
+        <div className="mb-6 border-b border-stone-300 pb-4">
+          <h2 className="text-sm font-medium tracking-widest text-stone-600 uppercase">
+            All Articles
+          </h2>
+        </div>
         <ArticleTable posts={recentPosts} />
 
         {/* Show message when no posts available */}
