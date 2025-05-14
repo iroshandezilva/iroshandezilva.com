@@ -34,7 +34,7 @@ export function Figure({
       )}
     >
       <div className="relative overflow-hidden rounded-md">
-        <div className="absolute inset-0 z-10 bg-black/10 opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
+        <div className="absolute inset-0 z-10 bg-black/10 opacity-0 transition-opacity duration-300"></div>
         <div>
           {src ? (
             <Image
@@ -54,7 +54,7 @@ export function Figure({
         </div>
       </div>
       {caption && (
-        <figcaption className="mt-3 text-sm text-red-500 italic">
+        <figcaption className="mt-3 text-center text-sm text-stone-500 italic">
           {caption}
         </figcaption>
       )}
