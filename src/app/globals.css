@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -20,7 +21,7 @@
 @theme {
   --font-heading: "Instrument Serif", serif;
   --font-body: "Switzer", sans-serif;
-  --font-hand: "Covered By Your Grace", cursive;
+  --font-hand: "Caveat", cursive;
   --font-geist: "Geist", sans-serif;
   --shadow-image: 0px 3.2px 6.4px 0px rgba(0, 0, 0, 0.05);
 
@@ -33,6 +34,10 @@
 body {
   background: oklch(0.98 0 102.07);
   @apply font-geist;
+}
+
+p {
+  @apply mb-3;
 }
 
 @theme inline {
