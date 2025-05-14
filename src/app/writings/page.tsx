@@ -13,7 +13,7 @@ export default function WritingsPage() {
   const recentPosts = getRecentArticles();
 
   return (
-    <div className="container mx-auto max-w-3xl px-6 pt-16 pb-12 lg:pt-24">
+    <div className="container mx-auto max-w-3xl px-6 pt-16 pb-12 md:px-0 lg:pt-24">
       {/* Page Header */}
       <div className="mb-10">
         <h1 className="font-heading mb-4 text-3xl text-stone-900 lg:text-5xl">
@@ -25,7 +25,6 @@ export default function WritingsPage() {
           </p>
           <a
             href="/rss.xml"
-            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-sm font-medium text-stone-600 transition-colors hover:text-stone-900"
           >
