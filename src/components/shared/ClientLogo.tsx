@@ -19,7 +19,6 @@ interface ClientLogoProps {
 export default function ClientLogo({
   src,
   alt,
-  className = "",
   priority = false,
   website,
 }: ClientLogoProps) {
