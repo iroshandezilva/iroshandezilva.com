@@ -1,4 +1,3 @@
-// filepath: /Users/iroshandezilva/Projects/iroshandezilva.com/src/app/writings/[slug]/page.tsx
 import { getArticleBySlug, getArticleSlugs } from "@/lib/writings-utils";
 import ArticleHeader from "@/components/writings/ArticleHeader";
 import { Metadata } from "next";
