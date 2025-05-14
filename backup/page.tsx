@@ -1,5 +1,17 @@
-import { getBlogPostBySlug, getBlogPostSlugs } from "@/lib/blog-utils";
-import BlogHeader from "@/components/blog/BlogHeader";
+import { getArticexport async function generateMetadata(props: any): Promise<Metadata> {
+  const article = getArticleBySlug(props.params.slug);
+
+  if (!article) {
+    return {
+      title: "Article Not Found",
+    };
+  }
+
+  return {
+    title: `${article.frontMatter.title} | Writings`,
+    description: article.frontMatter.excerpt,
+  };ArticleSlugs } from "@/lib/writings-utils";
+import ArticleHeader from "@/components/writings/ArticleHeader";
 import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
@@ -7,8 +19,8 @@ import { Callout, Frame, Image } from "@prose-ui/next";
 import React from "react";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getBlogPostSlugs();
-  return posts.map((slug) => ({
+  const articles = getArticleSlugs();
+  return articles.map((slug) => ({
     slug,
   }));
 }
@@ -25,14 +37,14 @@ export async function generateMetadata(props: any): Promise<Metadata> {
   }
 
   return {
-    title: `${post.frontMatter.title} | Blog`,
+    title: `${post.frontMatter.title} | Writings`,
     description: post.frontMatter.excerpt,
   };
 }
 
 // Using any is acceptable here because we're working around a type constraint issue
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function BlogPostPage(props: any) {
+export default function WritingPage(props: any) {
   const { slug } = props.params;
 
   try {
@@ -40,7 +52,7 @@ export default function BlogPostPage(props: any) {
 
     return (
       <article className="prose-ui container mx-auto max-w-3xl !bg-transparent px-4 py-12">
-        <BlogHeader post={post} />
+        <ArticleHeader post={post} />
         <div className="prose dark:prose-invert max-w-none">
           <MDXRemote
             source={post.content}

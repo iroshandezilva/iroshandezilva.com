@@ -30,7 +30,7 @@ export default function Navbar() {
         <nav className="space-x-4">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
-          <NavLink href="/blog">Blog</NavLink>
+          <NavLink href="/writings">Writings</NavLink>
 
           {/* <NavLink href="/stack">Stack</NavLink> */}
           <NavLink href="/contact">Contact</NavLink>

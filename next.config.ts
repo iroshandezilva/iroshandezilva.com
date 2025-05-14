@@ -7,6 +7,20 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/blog",
+        destination: "/writings",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug",
+        destination: "/writings/:slug",
+        permanent: true,
+      },
+    ];
+  },
   experimental: {
     serverActions: {
       allowedOrigins: ["*"],
