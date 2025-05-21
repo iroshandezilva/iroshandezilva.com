@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iroshan de Silva's Personal Website
+
+This is my personal website built with [Next.js](https://nextjs.org), showcasing my portfolio, writings, and professional work as a UX designer.
+
+## Project Overview
+
+This website features:
+- Portfolio of my design work and case studies
+- Blog/writings section with MDX support
+- About and contact information
+- My professional tech stack
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +38,93 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Writing Blog Posts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This site supports writing blog posts using MDX. Here's how to add new content:
+
+### Blog Post Structure
+
+1. Create a new MDX file in the appropriate content directory
+2. Add the required frontmatter at the top of your file:
+
+```mdx
+---
+title: Your Blog Post Title
+date: "YYYY-MM-DD"
+excerpt: A short summary of your post (will be displayed in blog listings)
+coverImage: "/path/to/your/image.jpg"
+tags: ["Tag1", "Tag2", "Tag3"]
+---
+```
+
+### Featured Posts
+
+To mark a post to be featured in the bento grid layout on the blog homepage:
+
+```mdx
+---
+title: Your Featured Blog Post Title
+date: "YYYY-MM-DD"
+excerpt: A short summary of your post
+coverImage: "/path/to/your/image.jpg"
+tags: ["Tag1", "Tag2", "Tag3"]
+featured: true
+---
+```
+
+### Using the Figure Component for Images
+
+For images within your blog posts, use the `Figure` component:
+
+```mdx
+<Figure
+  src="/path/to/image.jpg"
+  alt="Descriptive alt text"
+  caption="Your caption text"
+  align="center" // Options: left (default), center, right
+/>
+```
+
+### Tips for Creating Great Blog Posts
+
+1. Use a clear, descriptive title
+2. Always include a high-quality cover image (recommended aspect ratio: 16:9 or 4:3)
+3. Add meaningful tags to help categorize your content
+4. Keep excerpts concise but informative (ideally 1-2 sentences)
+5. Use headings (## and ###) to structure your content
+6. Include code snippets, callouts, and other MDX components to enhance your posts
+
+## Project Structure
+
+```
+src/
+  app/              # Next.js App Router files
+  components/       # React components
+  content/          # Blog content and guides
+  config/           # Site configuration
+  lib/              # Utility functions
+  types/            # TypeScript types
+```
+
+For detailed guides on writing content:
+- [Blog Post Guide](/src/content/BLOG-GUIDE.md)
+- [Writings Guide](/src/content/WRITINGS-GUIDE.md)
+- [Figure Component Guide](/src/content/FIGURE-GUIDE.md)
+
+## Deployment
+
+This site is built to be deployed on [Vercel](https://vercel.com).
+
+To deploy your own version:
+
+1. Fork this repository
+2. Connect it to your Vercel account
+3. Deploy the project
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [MDX Documentation](https://mdxjs.com/)
+- [Tailwind CSS](https://tailwindcss.com/docs) (if you're using Tailwind)

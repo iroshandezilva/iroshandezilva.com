@@ -19,7 +19,7 @@ export default function WritingsPage() {
         <h1 className="font-heading mb-4 text-3xl text-stone-900 lg:text-5xl">
           Not a blog. More like a trace
         </h1>
-        <div className="flex items-center justify-between">
+        <div className="flex md:items-center md:flex-row justify-between flex-col items-start">
           <p className="text-muted-foreground text-lg">
             Loose notes on design, code, and everything in between.
           </p>

@@ -173,7 +173,7 @@
 }
 
 body {
-  @apply font-geist bg-surface;
+  @apply font-geist bg-white;
 }
 
 p {
@@ -341,3 +341,4 @@ p {
     @apply bg-background text-foreground;
   }
 }
+
