@@ -47,7 +47,7 @@ export default function ArticleHeader({ post }: ArticleHeaderProps) {
         )}
       </div>
       {coverImage && (
-        <div className="relative mb-8 h-64 w-full overflow-hidden rounded-lg md:h-96">
+        <div className="relative mb-8 h-64 w-full overflow-hidden rounded-lg md:h-96 border border-[#C3C3C3]">
           <Image
             src={coverImage}
             alt={`Cover image for ${title}`}
