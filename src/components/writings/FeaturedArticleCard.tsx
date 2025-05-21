@@ -25,7 +25,7 @@ export default function FeaturedArticleCard({
       href={`/writings/${slug}`}
       className={`group bg-surface col-span-2 block overflow-hidden rounded-xl border border-stone-200 filter transition hover:border-stone-300 hover:brightness-[110%] ${className}`}
     >
-      <div className="relative aspect-[4/3]">
+      <div className="relative aspect-[3/2]">
         <Image
           src={imageUrl}
           alt={title}
