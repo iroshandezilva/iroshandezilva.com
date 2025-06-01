@@ -10,23 +10,8 @@ export default function AboutPage() {
       >
         <div className="inline-flex flex-col items-start justify-start gap-10">
           <h1 className="font-heading text-center text-4xl leading-12 text-gray-900 lg:text-5xl lg:leading-16">
-            I’m a product designer who helps people feel,{" "}
-            <span className="italic"> “oh, that makes sense"</span>
+            How to Work with Me
           </h1>
-          <figure className="flex flex-col items-start justify-start gap-8 self-stretch border-stone-100">
-            <Image
-              src="/images/portrait-iroshandezilva.webp"
-              alt="Portrait of Iroshan De Zilva"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="h-auto w-full rounded-xl border border-black/10"
-              priority
-            />
-            <figcaption className="sr-only">
-              Iroshan De Zilva, Product Designer
-            </figcaption>
-          </figure>
         </div>
       </section>
 
@@ -36,29 +21,48 @@ export default function AboutPage() {
       >
         <div className="flex flex-col gap-20">
           <section aria-labelledby="about-story" className="mb-0">
-            <h2 id="about-intro" className="sr-only">
-              About Iroshan De Zilva
+            <h2 className="font-heading mb-4 text-3xl text-stone-700">
+              My Personality
             </h2>
-            <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
-              <p>
-                When I was a kid, I took apart a toy just to see how it worked.
-                Didn’t manage to put it back together. Still remember how that
-                felt—curious, messy, kinda proud.
-              </p>
-              <p>That hasn’t changed much.</p>
-              <p>
-                These days, I design interfaces for SaaS tools, early-stage
-                products, and teams who care about clarity. I don’t do “make it
-                pretty.” I do <em>make it make sense</em>.
-              </p>
-              <p>
-                I ask a lot of questions. Fix flows. Move things around until
-                everything feels right. It’s not about showing off. It’s about
-                helping someone think,
-                <span className="font-semibold italic">
-                  “Oh… yeah, that’s what I was trying to do.”
-                </span>
-              </p>
+            <div className="flex flex-col space-y-8">
+              <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
+                <p>
+                  I’m someone who works best in calm, focused spaces. I recharge
+                  in solitude, not through constant back-and-forth.
+                </p>
+
+                <p>
+                  I’m thoughtful, clear, and intentional. I don’t rush into
+                  decisions. I like to give things space to breathe Then act
+                  with focus.
+                </p>
+
+                <p>
+                  I’m self-disciplined, but I value flow over force. If
+                  something feels off, I pause and figure out why before pushing
+                  through.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-heading mb-2 text-xl text-stone-700">
+                  My Strengths
+                </h3>
+                <ul className="list-inside list-disc tracking-wide text-stone-600">
+                  <li>I bring clarity when things get messy</li>
+                  <li>I design from a place of empathy, not ego</li>
+                  <li> I stay grounded and present when it matters</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-heading mb-2 text-xl text-stone-700">
+                  What I’m Working On
+                </h3>
+                <ul className="list-inside list-disc tracking-wide text-stone-600">
+                  <li>Being quicker when the situation calls for it</li>
+                  <li>Saying what I need without overexplaining</li>
+                  <li>Letting small things stay small</li>
+                </ul>
+              </div>
             </div>
           </section>
 
@@ -67,124 +71,150 @@ export default function AboutPage() {
               id="about-style"
               className="font-heading mb-4 text-3xl text-stone-700"
             >
-              My Style
-            </h2>
-            <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
-              <p>
-                I work quietly and quickly. I collaborate when it counts, but I
-                won’t slow anyone down.
-              </p>
-              <p>
-                If something’s unclear, I’ll ask. If not, I just keep moving.
-              </p>
-              <p>
-                What keeps me going? Figuring things out. That moment when it
-                finally clicks. That’s the good part.
-              </p>
-              <blockquote
-                className="font-hand mt-6 border-l-4 border-blue-300 pl-4 text-2xl text-gray-600 italic"
-                aria-label="Personal motto"
-              >
-                Make it clear. Make it work. Keep it fun 🤓
-              </blockquote>
-            </div>
-          </section>
-
-          <section aria-labelledby="about-approach" className="py-24">
-            <h2
-              id="about-approach"
-              className="mb-6 text-sm font-medium tracking-widest text-stone-600 uppercase"
-            >
-              PRIVILEGED TO COLLABORATE WITH 30+ TEAMS INCLUDING
-            </h2>
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <ClientLogo
-                src="/images/client-logos/client_amplifyn.webp"
-                alt="Amplifyn logo"
-                website="https://amplifyn.com"
-                priority
-              />
-              <ClientLogo
-                src="/images/client-logos/client_brolly.webp"
-                alt="Brolly logo"
-                website="https://brolly.com"
-              />
-              <ClientLogo
-                src="/images/client-logos/client_cimplk.webp"
-                alt="Cimplk logo"
-                website="https://cimplk.com"
-              />
-              <ClientLogo
-                src="/images/client-logos/client_helakuru.webp"
-                alt="Helakuru logo"
-                website="https://helakuru.lk"
-              />
-              <ClientLogo
-                src="/images/client-logos/client_leavedates.webp"
-                alt="Leave Dates logo"
-              />
-              <ClientLogo
-                src="/images/client-logos/client_payhere.webp"
-                alt="Payhere logo"
-              />
-              <ClientLogo
-                src="/images/client-logos/client_rooster.webp"
-                alt="Rooster logo"
-              />
-              <ClientLogo
-                src="/images/client-logos/client_sneakertub.webp"
-                alt="Sneakertub logo"
-              />
-            </div>
-          </section>
-
-          <section className="mb-0 space-y-4" aria-labelledby="about-care">
-            <h2
-              id="about-care"
-              className="font-heading mb-4 text-3xl text-stone-700"
-            >
               What I Care About
             </h2>
-            <ul className="list-inside list-disc space-y-1 text-base leading-7 tracking-wide text-stone-600">
-              <li>Clear structure</li>
-              <li>Calm communication</li>
-              <li>No fluff</li>
-              <li>Honest feedback</li>
-              <li>Kind people who care about their craft</li>
-            </ul>
-          </section>
-
-          <section className="mb-0 space-y-4" aria-labelledby="about-outside">
-            <h2
-              id="about-outside"
-              className="font-heading mb-4 text-3xl text-stone-700"
-            >
-              Outside of Design
-            </h2>
-            <div className="space-y-6 text-base leading-7 tracking-wide text-stone-600">
-              <p>
-                I spend a lot of time reading. Usually nonfiction—stuff about
-                how people think, how we work, and how to talk without
-                overthinking every word. It helps. Quietly.
-              </p>
-              <p>
-                I collect Hot Wheels too. Been doing it for years. There’s
-                something about how tiny and well-designed they are. Over 200
-                now. Still feels exciting when I find a good one.
-              </p>
-              <p>
-                Lately, I’ve been working on soft skills. Listening better.
-                Talking clearer. Saying less, but meaning more.
-              </p>
-              <p>
-                I live with my wife and our dog, Milo. We go hiking or camping
-                when we can. Not for the views—mostly for the quiet. It resets
-                me.
-              </p>
+            <div className="flex flex-col space-y-8">
+              <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
+                <p>
+                  I care about environments where people can be real. Where you
+                  don’t have to wear a mask to be taken seriously.
+                </p>
+                <p>
+                  I care about doing meaningful work — not just shipping fast or
+                  making things pretty.
+                </p>
+                <p>
+                  And I care about momentum. Not in a productivity sense, but in
+                  an energy sense. Are we growing? Are we learning?
+                </p>
+              </div>
+              <div>
+                <h3 className="font-heading mb-2 text-xl text-stone-700">
+                  You’ll get along with me if you:
+                </h3>
+                <ul className="list-inside list-disc tracking-wide text-stone-600">
+                  <li>Take ownership of your time and your outcomes</li>
+                  <li>Ask thoughtful questions</li>
+                  <li>Show up with care</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-heading mb-2 text-xl text-stone-700">
+                  You’ll struggle with me if you:
+                </h3>
+                <ul className="list-inside list-disc tracking-wide text-stone-600">
+                  <li>Fake enthusiasm or agreement</li>
+                  <li>Cut corners</li>
+                  <li>Keep repeating the same mistake without reflection</li>
+                </ul>
+              </div>
             </div>
           </section>
 
-          <div aria-hidden="true"></div>
+          <section aria-labelledby="about-style" className="mb-0">
+            <h2
+              id="about-style"
+              className="font-heading mb-4 text-3xl text-stone-700"
+            >
+              How I Like to Work Together
+            </h2>
+            <div className="flex flex-col space-y-8">
+              <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
+                <p>
+                  I work best in async flow. My mind is clear in the mornings
+                  and again at night. Afternoons are slower — avoid meetings
+                  during that window if possible.
+                </p>
+                <p>
+                  If you need me, message me with context. A clear ask. A voice
+                  note works great too.
+                </p>
+                <p>
+                  If I don’t reply fast, it’s not personal. I’m probably
+                  thinking through it. You can always nudge me.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-heading mb-2 text-xl text-stone-700">
+                  What builds my trust:
+                </h3>
+                <ul className="list-inside list-disc tracking-wide text-stone-600">
+                  <li>You say what’s real, even when it’s hard</li>
+                  <li>You follow through on what you say you’ll do</li>
+                  <li>
+                    You think about the person on the other side of the screen
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-heading mb-2 text-xl text-stone-700">
+                  What breaks it:
+                </h3>
+                <ul className="list-inside list-disc tracking-wide text-stone-600">
+                  <li>You say yes but don’t mean it</li>
+                  <li>
+                    You make the same mistake again and again without adjusting
+                  </li>
+                  <li>
+                    You treat the work like a checklist instead of something
+                    that should matter
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="about-style" className="mb-0">
+            <h2
+              id="about-style"
+              className="font-heading mb-4 text-3xl text-stone-700"
+            >
+              Feedback & Recognition
+            </h2>
+            <div className="flex flex-col space-y-8">
+              <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
+                <p>
+                  I give feedback through conversation. Usually in context, not
+                  as a performance.
+                </p>
+                <p>
+                  Sometimes it’ll sound like a small suggestion. Sometimes I’ll
+                  go deeper if I think it’ll help.
+                </p>
+                <p>
+                  I’m always honest, but never unkind. I’d rather help you grow
+                  than protect your feelings for the short term.
+                </p>
+                <p>
+                  I take feedback best when it’s thoughtful. Write it if it’s
+                  easier. I’ll read it carefully.
+                </p>
+                <p>
+                  Recognition isn’t something I need in public, but when it’s
+                  genuine, I really appreciate it.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="about-style" className="mb-0">
+            <h2
+              id="about-style"
+              className="font-heading mb-4 text-3xl text-stone-700"
+            >
+              Working With Me Is Simple
+            </h2>
+            <div className="flex flex-col space-y-8">
+              <div className="space-y-4 text-base leading-7 tracking-wide text-stone-600">
+                <p>Just bring care. Show up like it matters.</p>
+                <p>
+                  Don’t try to impress me. Try to understand the problem. Try to
+                  help others.
+                </p>
+                <p>That’s what I notice. That’s who I work best with.</p>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </>
