@@ -3,7 +3,7 @@
 import { CustomLink } from "@/components/shared/3d-button";
 import { ArrowRight } from "@phosphor-icons/react";
 import Image from "next/image";
-import { AuroraText } from "@/components/magicui/aurora-text";
+// import { AuroraText } from "@/components/magicui/aurora-text";
 
 export default function Hero() {
   return (
@@ -11,17 +11,19 @@ export default function Hero() {
       className="mx-auto max-w-3xl px-6 pt-16 pb-12 md:pt-28 lg:px-0"
       aria-labelledby="hero-heading"
     >
-      <div className="flex flex-col gap-6 lg:gap-12">
+      <div className="flex flex-col gap-6 lg:gap-6">
         <div className="flex flex-col justify-items-center gap-5 md:px-16 lg:px-36">
+          <span className="mx-auto rounded-full border border-green-300 bg-green-100 px-3 py-1 text-sm text-green-800">
+            Available for work
+          </span>
           <h1
             id="hero-heading"
             className="font-heading text-center text-4xl leading-12 text-gray-900 lg:text-5xl lg:leading-16"
           >
-            Users Are Leaving Your SaaS{" "}
-            <AuroraText colors={["#FF0080", "#7928CA", "#0070F3", "#38bdf8"]}>
-              {" "}
-              I&apos;ll Help You Keep Them
-            </AuroraText>
+            Users Are Leaving Your SaaS <br />
+            {/* <AuroraText colors={["#FF0080", "#7928CA", "#0070F3", "#38bdf8"]}> */}
+            I&apos;ll Help You Keep Them
+            {/* </AuroraText> */}
           </h1>
           <p className="font-body justify-start text-center text-base leading-6 font-normal text-slate-700 md:px-6 lg:px-12">
             By refining your product&apos;s UX, I help you increase activation
@@ -29,18 +31,21 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="mx-auto flex w-full flex-col gap-4 md:w-auto md:flex-row lg:gap-3">
+        <div className="mx-auto flex w-full flex-col gap-4 md:w-auto lg:gap-3">
           <CustomLink
             target="_blank"
-            href="https://cal.com/iroshandezilva/client-consultation"
-            className="w-full lg:w-auto"
+            href="mailto:hello@iroshandezilva.com"
+            className="mx-auto w-full md:w-max"
             variant="ai"
             size="lg"
             leadingIcon={ArrowRight}
             aria-label="Schedule an introduction consultation"
           >
-            Schedule an intro
+            Contact me
           </CustomLink>
+          <span className="text-xs text-stone-500">
+            Replies in 1–2 hours (GMT+5:30)
+          </span>
           {/* <CustomLink
             href="/contact"
             className="w-full lg:w-auto"
@@ -52,7 +57,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <figure className="mx-auto mt-12 flex max-w-md rounded-xl bg-stone-200/40 p-6">
+      <figure className="mx-auto mt-18 flex max-w-md rounded-xl bg-stone-200/40 p-6">
         <svg
           width="37"
           height="63"
@@ -118,7 +123,7 @@ export default function Hero() {
         </svg>
 
         <figcaption className="flex basis-full flex-col gap-3 px-4">
-          <blockquote className="text-center text-xs">
+          <blockquote className="text-center text-sm text-stone-600">
             …Working with Iroshan instantly raised the quality of our product
             and design. If you get the opportunity, don&apos;t think twice —
             just bring him on..
