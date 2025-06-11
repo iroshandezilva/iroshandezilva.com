@@ -55,7 +55,7 @@ export default function MyServices() {
             How can I help you
           </h2>
         </div>
-        <div className="border-stone-00 flex flex-col items-start justify-start gap-8 self-stretch">
+        <div className="flex flex-col items-start justify-start gap-8 self-stretch">
           <div className="flex flex-col gap-4">
             {services.map((service, index) => (
               <ServiceCard
