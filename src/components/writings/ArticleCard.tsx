@@ -16,7 +16,7 @@ export default function ArticleCard({ post }: ArticleCardProps) {
   });
 
   return (
-    <div className="ransition-shadow mb-8 overflow-hidden">
+    <div className="transition-shadow mb-8 overflow-hidden">
       <Link href={`/writings/${slug}`} className="block">
         <div className="rounded-lg">
           <p className="mb-2 text-sm text-gray-500">{formattedDate}</p>
